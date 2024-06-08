@@ -12,6 +12,12 @@ def isPalindrome(s: str) -> bool:
     
     return True  # 회문이면 True 반환
 
-# 테스트
-print(isPalindrome("A man, a plan, a canal: Panama"))  # 출력: True
-print(isPalindrome("race a car"))                      # 출력: False
+def check_palindrome():
+    s = input("문자열 입력: ")
+    if isPalindrome(s):
+        print("입력한 문자열은 회문입니다.")
+    else:
+        print("입력한 문자열은 회문이 아닙니다.")
+
+# 함수 호출
+check_palindrome()
