@@ -21,7 +21,7 @@ class Tree:
                 if not self.root:
                     self.root = TreeNode(value)
                 else:
-                    self._add_node(self.rootm value)
+                    self._add_node(self.root value)
                 self.node_values.add(value)
 
     def _add_node(self, node, value):
