@@ -20,6 +20,10 @@ class Array:
 size = int(input("Enter the size of the array: "))
 arr = Array(size)
 
+for i in range(size):
+    value = int(input(f"Enter value for index {i}: "))
+    arr.insert(i, value)
+
 while True:
     action = input("Enter 'i' tp insert, 'd' to deleter, 's' to search, or 'q' to quit: ")
 
