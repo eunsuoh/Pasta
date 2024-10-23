@@ -8,6 +8,9 @@ class LinkedList:
         self.head = None
 
     def insert(self, value):
+        if self.search(value):
+            print(f"{value} is already in the linked list. Please enter a different value")
+            return
         new_node = Node(value)
         new_node.next = self.head
         self.head = new_node
